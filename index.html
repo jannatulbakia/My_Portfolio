@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title> Jannatul Bakia-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">Jannatul Bakia</a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link cta">Contact</a>
+            </nav>
+            <button id="menuToggle" class="menu-toggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1 id="typedText">Hi, I’m <span class="accent">Jannatul Bakia</span></h1>
+                    <p>I enjoy creating clear, effective code and making ambitious ideas a reality. My objective is to
+                        develop web solutions that are visually appealing and offer seamless, user friendly experiences.
+                    </p>
+                    <div class="hero-actions">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:jannatulbakia026@gmail.com" data-email="jannatulbakia026@gmail.com"
+                                class="email-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/jannatulbakia" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <button id="downloadResume" class="btn">Download Resume</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="Image/my_image.jpg" alt="Jannatul Bakia">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-sub">A selection of recent projects..</p>
+                <div class="grid projects-grid" id="projectsGrid">
+                    <article class="card project-card">
+                        <div class="thumb">
+                            <img src="Image/nutrify.png" alt="Project 1">
+                        </div>
+                        <div class="card-body">
+                            <h3>Nutrify Life</h3>
+                            <p class="muted">Contributed to a health-oriented web application using React, Firebase, and
+                                MongoDB.</p>
+                            <div class="card-actions">
+                                <button class="btn btn-sm view-btn" data-image="Image/nutrify.png">View</button>
+                                <a class="link" href="https://github.com/jannatulbakia/Nutrify_Life">Source</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="thumb">
+                            <img src="Image/travel.png" alt="Project 2">
+                        </div>
+                        <div class="card-body">
+                            <h3>Travel & Tourism</h3>
+                            <p class="muted">Developed a travel website for Bangladesh using Next.js, Firebase, and
+                                MongoDB.</p>
+                            <div class="card-actions">
+                                <button class="btn btn-sm view-btn" data-image="Image/travel.png">View</button>
+                                <a class="link" href="https://github.com/jannatulbakia/Travel_And_Tourism">Source</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <!-- About Section -->
+        <section id="about" class="section alt">
+            <div class="container about-grid">
+                <div>
+                    <h2 class="section-title">About Me</h2>
+                    <p>I am an enthusiastic web developer specializing in intuitive digital experiences. I enjoy
+                        learning new skills and am currently exploring machine learning and AI. My main focus is to
+                        create projects that are not only
+                        helpful for user but it's also based on real life problems.</p>
+                    <ul class="skills">
+                        <li>HTML / CSS / JS</li>
+                        <li>React / Next.js</li>
+                        <li>Node.js</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="profile-card">
+                    <img src="Image/1a.jpg" alt="Your photo">
+                    <div class="profile-meta">
+                        <h3>Jannatul Bakia</h3>
+                        <p class="muted">Web Developer</p>
+                        <a class="btn" href="#education">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education container" id="education">
+            <h2 class="education-title">Education</h2>
+            <p class="education-sub">My academic background and qualifications</p>
+
+            <div class="edu-timeline">
+                <div class="edu-item">
+                    <h3>B.Sc. in Computer Science</h3>
+                    <p class="edu-institute">Bangladesh Army International University of Science</p>
+                    <p class="edu-year">Ongoing</p>
+                    <div class="edu-card">
+                        <p>Majoring in Data Science.
+                            Completed projects Software Engineering.</p>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <h3>College</h3>
+                    <p class="edu-institute">Cumilla Govt. Women's College</p>
+                </div>
+
+                <div class="edu-item">
+                    <h3>School</h3>
+                    <p class="edu-institute">Our Lady of Fatima Girls High School</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-sub">Want to connect? Reach out via:</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank">LinkedIn</a>
+                    <a href="mailto:jannatulbakia026@gmail.com" data-email="jannatulbakia026@gmail.com"
+                        class="email-link">Email</a>
+                    <a href="https://github.com/jannatulbakia" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Jannatul Bakia</p>
+        </div>
+    </footer>
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
+            <div id="lbContent" class="lb-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
