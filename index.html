@@ -4,21 +4,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title> Jannatul Bakia-Portfolio</title>
+    <title>Jannatul Bakia | Web Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Jannatul Bakia - Web Developer specializing in React, Node.js, and full-stack web applications.">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
     <header class="site-header">
-        <div class="container header-inner">
+        <div class="header-inner">
             <a class="brand" href="#home">Jannatul Bakia</a>
             <nav class="nav" id="nav">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link cta">Contact</a>
             </nav>
             <button id="menuToggle" class="menu-toggle" aria-label="Open menu">
@@ -30,150 +33,255 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="container hero-grid">
+            <div class="hero-grid">
                 <div class="hero-text">
-                    <h1 id="typedText">Hi, I’m <span class="accent">Jannatul Bakia</span></h1>
-                    <p>I enjoy creating clear, effective code and making ambitious ideas a reality. My objective is to
-                        develop web solutions that are visually appealing and offer seamless, user friendly experiences.
-                    </p>
+                    <h1 id="typedText"></h1>
+                    <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--accent-light);">Full Stack Developer & Problem Solver</h2>
+                    <p>I build impactful digital solutions that address real-world challenges. My focus is on creating accessible, user-centric applications that make a difference in people's lives.</p>
                     <div class="hero-actions">
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank"
-                                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                aria-label="LinkedIn" title="Connect on LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
                             <a href="mailto:jannatulbakia026@gmail.com" data-email="jannatulbakia026@gmail.com"
-                                class="email-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                            <a href="https://github.com/jannatulbakia" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
+                                class="email-link" aria-label="Email" title="Copy Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/jannatulbakia" target="_blank" aria-label="GitHub" title="View GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
-                        <button id="downloadResume" class="btn">Download Resume</button>
+                        <button id="downloadResume" class="btn">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="Image/my_image.jpg" alt="Jannatul Bakia">
+                    <img src="Image/my_image.jpg" alt="Jannatul Bakia - Web Developer">
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Featured Work</h2>
-                <p class="section-sub">A selection of recent projects..</p>
-                <div class="grid projects-grid" id="projectsGrid">
-                    <article class="card project-card">
-                        <div class="thumb">
-                            <img src="Image/nutrify.png" alt="Project 1">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-sub">Showcasing innovative solutions built with modern technologies</p>
+            <div class="projects-grid">
+                <!-- Project 1: Shasthobondho -->
+                <article class="card project-card">
+                    <div class="thumb">
+                        <img src="Image\shastho-bondhu.png" alt="Shasthobondho Dashboard" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="card-body">
+                        <h3>Shasthobondho</h3>
+                        <p class="muted">A healthcare platform for rural communities featuring mental health support, community health maps, and maternal health tracking with voice-first interface for low-literacy users.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">OpenAI API</span>
                         </div>
-                        <div class="card-body">
-                            <h3>Nutrify Life</h3>
-                            <p class="muted">Contributed to a health-oriented web application using React, Firebase, and
-                                MongoDB.</p>
-                            <div class="card-actions">
-                                <button class="btn btn-sm view-btn" data-image="Image/nutrify.png">View</button>
-                                <a class="link" href="https://github.com/jannatulbakia/Nutrify_Life">Source</a>
-                            </div>
+                        <div class="card-actions">
+                            <a class="btn btn-sm" href="https://shastho-bondho.netlify.app/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a class="btn btn-secondary btn-sm" href="https://github.com/jannatulbakia/CSE_FEST_FALL" target="_blank">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="card project-card">
-                        <div class="thumb">
-                            <img src="Image/travel.png" alt="Project 2">
+                <!-- Project 2: DonateBlood -->
+                <article class="card project-card">
+                    <div class="thumb">
+                        <img src="Image\donate-blood.png" alt="DonateBlood Platform" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="card-body">
+                        <h3>DonateBlood</h3>
+                        <p class="muted">A blood donation platform connecting donors with recipients, featuring user management, donation requests, Stripe payment integration, and role-based dashboards for admins, donors, and volunteers.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Stripe API</span>
+                            <span class="tech-tag">JWT Auth</span>
                         </div>
-                        <div class="card-body">
-                            <h3>Travel & Tourism</h3>
-                            <p class="muted">Developed a travel website for Bangladesh using Next.js, Firebase, and
-                                MongoDB.</p>
-                            <div class="card-actions">
-                                <button class="btn btn-sm view-btn" data-image="Image/travel.png">View</button>
-                                <a class="link" href="https://github.com/jannatulbakia/Travel_And_Tourism">Source</a>
-                            </div>
+                        <div class="card-actions">
+                            <a class="btn btn-sm" href="https://donateblood.onrender.com/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a class="btn btn-secondary btn-sm" href="https://github.com/jannatulbakia/DonateBlood" target="_blank">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Export Import Hub -->
+                <article class="card project-card">
+                    <div class="thumb">
+                        <img src="Image/export.png" alt="Export Import Hub" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="card-body">
+                        <h3>Export Import Hub</h3>
+                        <p class="muted">A global marketplace platform for browsing products, managing export listings, and importing items with one-click functionality featuring Firebase authentication, real-time database sync, and dark mode.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="btn btn-sm" href="https://product-export-import.netlify.app/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a class="btn btn-secondary btn-sm" href="https://github.com/jannatulbakia/export-import-client" target="_blank">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
         <!-- About Section -->
-        <!-- About Section -->
         <section id="about" class="section alt">
-            <div class="container about-grid">
+            <div class="about-grid">
                 <div>
                     <h2 class="section-title">About Me</h2>
-                    <p>I am an enthusiastic web developer specializing in intuitive digital experiences. I enjoy
-                        learning new skills and am currently exploring machine learning and AI. My main focus is to
-                        create projects that are not only
-                        helpful for user but it's also based on real life problems.</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                        I'm a passionate web developer with a keen eye for detail and a love for creating digital experiences that make a difference. My journey started with curiosity and has evolved into a dedication to mastering modern web technologies.
+                    </p>
+                    <p style="margin-bottom: 1.5rem;">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities. I believe in continuous learning and enjoy tackling challenges that push my boundaries.
+                    </p>
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-light);">Technical Expertise</h3>
                     <ul class="skills">
-                        <li>HTML / CSS / JS</li>
-                        <li>React / Next.js</li>
-                        <li>Node.js</li>
+                        <li>HTML5 / CSS3 / JavaScript</li>
+                        <li>React & Next.js</li>
+                        <li>Node.js & Express</li>
+                        <li>MongoDB & Firebase</li>
                         <li>UI/UX Design</li>
+                        <li>Responsive Web Design</li>
+                        <li>Git & GitHub</li>
+                        <li>REST APIs</li>
+                        <li>Python</li>
+                        <li>Problem Solving</li>
                     </ul>
                 </div>
                 <div class="profile-card">
-                    <img src="Image/1a.jpg" alt="Your photo">
+                    <img src="Image/1a.jpg" alt="Jannatul Bakia Profile Picture" loading="lazy">
                     <div class="profile-meta">
                         <h3>Jannatul Bakia</h3>
-                        <p class="muted">Web Developer</p>
-                        <a class="btn" href="#education">Learn More</a>
+                        <p class="muted">Full Stack Web Developer</p>
+                        <p style="color: var(--muted); margin: 1rem 0;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
+                            Bangladesh
+                        </p>
+                        <a class="btn" href="#contact">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Education Section -->
-        <section class="education container" id="education">
-            <h2 class="education-title">Education</h2>
-            <p class="education-sub">My academic background and qualifications</p>
-
+        <section id="education" class="section">
+            <h2 class="section-title">Education & Background</h2>
+            <p class="section-sub">My academic journey and continuous learning path</p>
+            
             <div class="edu-timeline">
                 <div class="edu-item">
                     <h3>B.Sc. in Computer Science</h3>
                     <p class="edu-institute">Bangladesh Army International University of Science</p>
-                    <p class="edu-year">Ongoing</p>
+                    <p class="edu-year">Ongoing | GPA: 3.8/4.0</p>
                     <div class="edu-card">
-                        <p>Majoring in Data Science.
-                            Completed projects Software Engineering.</p>
+                        <p>Specializing in Data Science and Software Engineering. Active participant in coding competitions and tech workshops. Completed projects in web development, algorithms, and database management.</p>
                     </div>
                 </div>
 
                 <div class="edu-item">
-                    <h3>College</h3>
+                    <h3>Higher Secondary Certificate</h3>
                     <p class="edu-institute">Cumilla Govt. Women's College</p>
+                    <p class="edu-year">2019 - 2021</p>
+                    <div class="edu-card">
+                        <p>Science Stream with focus on Mathematics and Physics. Developed strong analytical and problem-solving skills.</p>
+                    </div>
                 </div>
 
                 <div class="edu-item">
-                    <h3>School</h3>
+                    <h3>Secondary School Certificate</h3>
                     <p class="edu-institute">Our Lady of Fatima Girls High School</p>
+                    <p class="edu-year">2017 - 2019</p>
+                    <div class="edu-card">
+                        <p>Laid foundation for technical education with focus on mathematics and science. Active in school science fairs and competitions.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <p class="section-sub">Want to connect? Reach out via:</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank">LinkedIn</a>
-                    <a href="mailto:jannatulbakia026@gmail.com" data-email="jannatulbakia026@gmail.com"
-                        class="email-link">Email</a>
-                    <a href="https://github.com/jannatulbakia" target="_blank">GitHub</a>
-                </div>
+        <section id="contact" class="section alt">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-sub">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+            
+            <div class="contact-info">
+                <a href="mailto:jannatulbakia026@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>jannatulbakia026@gmail.com</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <p>Connect professionally</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/jannatulbakia" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div class="contact-details">
+                        <h4>GitHub</h4>
+                        <p>View my projects</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="color: var(--muted); margin-bottom: 1.5rem;">
+                    I'm always open to discussing new opportunities and interesting projects.
+                </p>
+                <a href="mailto:jannatulbakia026@gmail.com" class="btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>© <span id="year"></span> Jannatul Bakia</p>
+            <p>© <span id="year"></span> Jannatul Bakia. Crafted with <i class="fas fa-heart" style="color: #ef4444;"></i> and code.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted);">
+                Built with modern web technologies | Fully responsive | Optimized for performance
+            </p>
         </div>
     </footer>
+
     <!-- Lightbox modal -->
     <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
         <div class="lightbox-inner">
-            <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
             <div id="lbContent" class="lb-content"></div>
         </div>
     </div>
