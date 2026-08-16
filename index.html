@@ -1,292 +1,355 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Jannatul Bakia | Web Developer Portfolio</title>
-    <meta name="description" content="Professional portfolio of Jannatul Bakia - Web Developer specializing in React, Node.js, and full-stack web applications.">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jannatul Bakia | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Jannatul Bakia — Full-Stack Developer specializing in React, Next.js, Node.js, and MongoDB.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="header-inner">
-            <a class="brand" href="#home">Jannatul Bakia</a>
-            <nav class="nav" id="nav">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#contact" class="nav-link cta">Contact</a>
-            </nav>
-            <button id="menuToggle" class="menu-toggle" aria-label="Open menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-grid">
-                <div class="hero-text">
-                    <h1 id="typedText"></h1>
-                    <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--accent-light);">Full Stack Developer & Problem Solver</h2>
-                    <p>I build impactful digital solutions that address real-world challenges. My focus is on creating accessible, user-centric applications that make a difference in people's lives.</p>
-                    <div class="hero-actions">
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank"
-                                aria-label="LinkedIn" title="Connect on LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:jannatulbakia026@gmail.com" data-email="jannatulbakia026@gmail.com"
-                                class="email-link" aria-label="Email" title="Copy Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://github.com/jannatulbakia" target="_blank" aria-label="GitHub" title="View GitHub Profile">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <button id="downloadResume" class="btn">
-                            <i class="fas fa-download"></i> Download Resume
-                        </button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="Image/my_image.jpg" alt="Jannatul Bakia - Web Developer">
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-sub">Showcasing innovative solutions built with modern technologies</p>
-            <div class="projects-grid">
-                <!-- Project 1: Shasthobondho -->
-                <article class="card project-card">
-                    <div class="thumb">
-                        <img src="Image\shastho-bondhu.png" alt="Shasthobondho Dashboard" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&auto=format&fit=crop'">
-                    </div>
-                    <div class="card-body">
-                        <h3>Shasthobondho</h3>
-                        <p class="muted">A healthcare platform for rural communities featuring mental health support, community health maps, and maternal health tracking with voice-first interface for low-literacy users.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">OpenAI API</span>
-                        </div>
-                        <div class="card-actions">
-                            <a class="btn btn-sm" href="https://shastho-bondho.netlify.app/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a class="btn btn-secondary btn-sm" href="https://github.com/jannatulbakia/CSE_FEST_FALL" target="_blank">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2: DonateBlood -->
-                <article class="card project-card">
-                    <div class="thumb">
-                        <img src="Image\donate-blood.png" alt="DonateBlood Platform" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&auto=format&fit=crop'">
-                    </div>
-                    <div class="card-body">
-                        <h3>DonateBlood</h3>
-                        <p class="muted">A blood donation platform connecting donors with recipients, featuring user management, donation requests, Stripe payment integration, and role-based dashboards for admins, donors, and volunteers.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">Stripe API</span>
-                            <span class="tech-tag">JWT Auth</span>
-                        </div>
-                        <div class="card-actions">
-                            <a class="btn btn-sm" href="https://donateblood.onrender.com/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a class="btn btn-secondary btn-sm" href="https://github.com/jannatulbakia/DonateBlood" target="_blank">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3: Export Import Hub -->
-                <article class="card project-card">
-                    <div class="thumb">
-                        <img src="Image/export.png" alt="Export Import Hub" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop'">
-                    </div>
-                    <div class="card-body">
-                        <h3>Export Import Hub</h3>
-                        <p class="muted">A global marketplace platform for browsing products, managing export listings, and importing items with one-click functionality featuring Firebase authentication, real-time database sync, and dark mode.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Vite</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                        <div class="card-actions">
-                            <a class="btn btn-sm" href="https://product-export-import.netlify.app/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a class="btn btn-secondary btn-sm" href="https://github.com/jannatulbakia/export-import-client" target="_blank">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section alt">
-            <div class="about-grid">
-                <div>
-                    <h2 class="section-title">About Me</h2>
-                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-                        I'm a passionate web developer with a keen eye for detail and a love for creating digital experiences that make a difference. My journey started with curiosity and has evolved into a dedication to mastering modern web technologies.
-                    </p>
-                    <p style="margin-bottom: 1.5rem;">
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities. I believe in continuous learning and enjoy tackling challenges that push my boundaries.
-                    </p>
-                    <h3 style="margin-bottom: 1rem; color: var(--accent-light);">Technical Expertise</h3>
-                    <ul class="skills">
-                        <li>HTML5 / CSS3 / JavaScript</li>
-                        <li>React & Next.js</li>
-                        <li>Node.js & Express</li>
-                        <li>MongoDB & Firebase</li>
-                        <li>UI/UX Design</li>
-                        <li>Responsive Web Design</li>
-                        <li>Git & GitHub</li>
-                        <li>REST APIs</li>
-                        <li>Python</li>
-                        <li>Problem Solving</li>
-                    </ul>
-                </div>
-                <div class="profile-card">
-                    <img src="Image/1a.jpg" alt="Jannatul Bakia Profile Picture" loading="lazy">
-                    <div class="profile-meta">
-                        <h3>Jannatul Bakia</h3>
-                        <p class="muted">Full Stack Web Developer</p>
-                        <p style="color: var(--muted); margin: 1rem 0;">
-                            <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
-                            Bangladesh
-                        </p>
-                        <a class="btn" href="#contact">
-                            <i class="fas fa-paper-plane"></i> Get In Touch
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <h2 class="section-title">Education & Background</h2>
-            <p class="section-sub">My academic journey and continuous learning path</p>
-            
-            <div class="edu-timeline">
-                <div class="edu-item">
-                    <h3>B.Sc. in Computer Science</h3>
-                    <p class="edu-institute">Bangladesh Army International University of Science</p>
-                    <p class="edu-year">Ongoing | GPA: 3.8/4.0</p>
-                    <div class="edu-card">
-                        <p>Specializing in Data Science and Software Engineering. Active participant in coding competitions and tech workshops. Completed projects in web development, algorithms, and database management.</p>
-                    </div>
-                </div>
-
-                <div class="edu-item">
-                    <h3>Higher Secondary Certificate</h3>
-                    <p class="edu-institute">Cumilla Govt. Women's College</p>
-                    <p class="edu-year">2019 - 2021</p>
-                    <div class="edu-card">
-                        <p>Science Stream with focus on Mathematics and Physics. Developed strong analytical and problem-solving skills.</p>
-                    </div>
-                </div>
-
-                <div class="edu-item">
-                    <h3>Secondary School Certificate</h3>
-                    <p class="edu-institute">Our Lady of Fatima Girls High School</p>
-                    <p class="edu-year">2017 - 2019</p>
-                    <div class="edu-card">
-                        <p>Laid foundation for technical education with focus on mathematics and science. Active in school science fairs and competitions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section alt">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-sub">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
-            
-            <div class="contact-info">
-                <a href="mailto:jannatulbakia026@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div class="contact-details">
-                        <h4>Email</h4>
-                        <p>jannatulbakia026@gmail.com</p>
-                    </div>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank" class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <div class="contact-details">
-                        <h4>LinkedIn</h4>
-                        <p>Connect professionally</p>
-                    </div>
-                </a>
-                
-                <a href="https://github.com/jannatulbakia" target="_blank" class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <div class="contact-details">
-                        <h4>GitHub</h4>
-                        <p>View my projects</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <p style="color: var(--muted); margin-bottom: 1.5rem;">
-                    I'm always open to discussing new opportunities and interesting projects.
-                </p>
-                <a href="mailto:jannatulbakia026@gmail.com" class="btn">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="year"></span> Jannatul Bakia. </p>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted);">
-                Built with modern web technologies | Fully responsive | Optimized for performance
-            </p>
-        </div>
-    </footer>
-
-    <!-- Lightbox modal -->
-    <div id="lightbox" class="lightbox" aria-hidden="true">
-        <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
-        <div class="lightbox-inner">
-            <div id="lbContent" class="lb-content"></div>
-        </div>
+  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-line" id="topbar">
+    <div class="wrap flex items-center justify-between py-[18px]">
+      <a class="font-serif italic font-semibold text-xl no-underline" href="#home">Jannatul Bakia</a>
+      <nav class="hidden md:flex items-center gap-8" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="bg-ink text-paper px-[18px] py-[10px] rounded-sm text-sm no-underline hover:bg-gold transition-colors">Contact</a>
+      </nav>
+      <button id="menuToggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
+        <span class="block w-[22px] h-0.5 bg-ink"></span>
+        <span class="block w-[22px] h-0.5 bg-ink"></span>
+        <span class="block w-[22px] h-0.5 bg-ink"></span>
+      </button>
     </div>
+    <nav id="mobileNav" class="hidden md:hidden flex-col bg-paper border-b border-line px-6 pb-4">
+      <a href="#about" class="py-3 border-b border-line no-underline text-ink">About</a>
+      <a href="#skills" class="py-3 border-b border-line no-underline text-ink">Skills</a>
+      <a href="#projects" class="py-3 border-b border-line no-underline text-ink">Projects</a>
+      <a href="#experience" class="py-3 border-b border-line no-underline text-ink">Experience</a>
+      <a href="#education" class="py-3 border-b border-line no-underline text-ink">Education</a>
+      <a href="#resume" class="py-3 border-b border-line no-underline text-ink">Resume</a>
+      <a href="#contact" class="py-3 no-underline text-ink">Contact</a>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+
+    <!-- HERO -->
+    <section class="pt-16 pb-10" id="home">
+      <div class="wrap grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-10 md:gap-14 items-center">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1 class="font-serif font-medium -tracking-tight text-[clamp(2.5rem,5.4vw,3.9rem)] leading-[1.04] mb-[18px]">
+            Jannatul<br>Bakia
+          </h1>
+          <p class="font-mono text-sm tracking-wider uppercase text-inksoft mb-5">Full-Stack Developer · MERN Stack</p>
+          <p class="max-w-[56ch] text-inksoft text-base md:text-lg mb-7">
+            I build production interfaces and the systems behind them React and Next.js on the front end, Node.js, Express, and MongoDB underneath. I work AI-assisted tools like Copilot, Cursor, and Windsurf into my process daily, and I take projects from first schema to shipped product.
+          </p>
+          <div class="flex gap-9 flex-wrap mb-8">
+            <div class="flex flex-col">
+              <span class="font-serif font-semibold text-2xl">3+</span>
+              <span class="font-mono text-[0.68rem] uppercase tracking-wider text-inkfaint mt-0.5">Production Projects</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif font-semibold text-2xl">3.83</span>
+              <span class="font-mono text-[0.68rem] uppercase tracking-wider text-inkfaint mt-0.5">CGPA</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif font-semibold text-2xl">2×</span>
+              <span class="font-mono text-[0.68rem] uppercase tracking-wider text-inkfaint mt-0.5">Hackathon Placements</span>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-3.5 mb-6">
+            <a class="btn-primary" href="#projects">View my work</a>
+            <a class="btn-ghost" href="resume.pdf" download="jannatul-bakia-resume.pdf">Download Resume ↓</a>
+            <a class="btn-ghost" href="https://github.com/jannatulbakia" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <div class="flex gap-2.5">
+            <a href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank" rel="noopener" aria-label="LinkedIn"
+               class="w-[38px] h-[38px] rounded-full border border-line flex items-center justify-center no-underline font-mono text-xs text-inksoft hover:border-gold hover:text-gold transition-colors">in</a>
+            <a href="https://github.com/jannatulbakia" target="_blank" rel="noopener" aria-label="GitHub"
+               class="w-[38px] h-[38px] rounded-full border border-line flex items-center justify-center no-underline font-mono text-xs text-inksoft hover:border-gold hover:text-gold transition-colors">gh</a>
+            <a href="mailto:jannatulbakia026@gmail.com" aria-label="Email"
+               class="w-[38px] h-[38px] rounded-full border border-line flex items-center justify-center no-underline font-mono text-xs text-inksoft hover:border-gold hover:text-gold transition-colors">@</a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-[360px] sm:max-w-[280px] md:max-w-[360px] rounded-lg overflow-hidden border border-line shadow-portrait-sm sm:shadow-portrait">
+            <img src="Image/my_image.jpg" alt="Portrait of Jannatul Bakia" class="w-full h-full object-cover aspect-[4/5]">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="pt-24 pb-1" id="about">
+      <div class="wrap reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Background</h2>
+        <div class="max-w-[66ch] text-inksoft text-base md:text-lg space-y-4">
+          <p>I'm a full-stack developer with production experience across the MERN stack and TypeScript. I build AI-assisted workflows into my daily development using GitHub Copilot, Cursor, and Windsurf to move faster without letting code quality slip.</p>
+          <blockquote class="font-serif italic font-medium text-[clamp(1.35rem,2.4vw,1.8rem)] text-ink leading-snug border-l-2 border-gold pl-6 py-1.5 my-8 max-w-[52ch]">
+            "I take full ownership of what I build, end-to-end from schema design through deployment."
+          </blockquote>
+          <p>I've integrated third-party AI APIs, including GPT, into real production features rather than one-off demos, and I work daily from the terminal and Git. I recently won the <strong>BAIUST CSE Fall Fest Hackathon 2025</strong> and placed <strong>1st Runner-Up</strong> in the CSE Fest Hackathon and I adapt quickly to new tools and remote, fast-moving team environments.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="pt-24 pb-1" id="skills">
+      <div class="wrap reveal">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title">What I work with</h2>
+        <p class="section-sub">Grouped by where it sits in the stack.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-9 gap-x-12">
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint pb-2.5 border-b border-line mb-3.5">AI-Assisted Development</div>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="chip">GitHub Copilot</span><span class="chip">Cursor</span><span class="chip">Windsurf</span>
+              <span class="chip">GPT API Integration</span><span class="chip">Prompt-Driven Debugging</span>
+            </div>
+          </div>
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint pb-2.5 border-b border-line mb-3.5">Frontend</div>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">JavaScript (ES6+)</span>
+              <span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">HTML5/CSS3</span>
+            </div>
+          </div>
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint pb-2.5 border-b border-line mb-3.5">Backend &amp; APIs</div>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">REST API Design</span>
+              <span class="chip">JWT Authentication</span><span class="chip">Firebase</span>
+            </div>
+          </div>
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint pb-2.5 border-b border-line mb-3.5">Databases</div>
+            <div class="flex flex-wrap gap-2.5"><span class="chip">MongoDB</span><span class="chip">SQL</span></div>
+          </div>
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint pb-2.5 border-b border-line mb-3.5">Tools &amp; Workflow</div>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="chip">Git &amp; GitHub</span><span class="chip">Docker</span><span class="chip">Terminal / CLI</span>
+              <span class="chip">VS Code</span><span class="chip">Python (basics)</span>
+            </div>
+          </div>
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint pb-2.5 border-b border-line mb-3.5">UI Engineering</div>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="chip">Responsive Design</span><span class="chip">Mobile-First</span>
+              <span class="chip">Accessibility (a11y)</span><span class="chip">Cross-Browser Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="pt-24 pb-1" id="projects">
+      <div class="wrap reveal">
+        <p class="eyebrow">Projects</p>
+        <h2 class="section-title">Selected work</h2>
+        <p class="section-sub">Four builds, from schema to deployment.</p>
+      </div>
+
+      <div class="wrap">
+
+        <!-- Shasthobondho -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center py-14 border-b border-line reveal">
+          <div class="rounded-lg overflow-hidden border border-line bg-card shadow-[0_10px_30px_rgba(27,33,29,0.06)]">
+            <div class="flex items-center gap-1.5 px-3 py-2.5 bg-paperwarm border-b border-line">
+              <span class="w-2.5 h-2.5 rounded-full bg-clay inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-gold inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-forest inline-block"></span>
+              <span class="ml-2.5 font-mono text-xs text-inkfaint">shastho-bondho.netlify.app</span>
+            </div>
+            <img src="Image/shastho-bondhu.png" alt="Shasthobondho dashboard screenshot" class="w-full h-auto">
+          </div>
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint mb-2.5">Group Project · Healthcare Platform</div>
+            <h3 class="font-serif font-medium text-2xl mb-3.5">Shasthobondho</h3>
+            <p class="text-inksoft mb-4">A healthcare platform for rural communities featuring mental health support, community health maps, maternal health tracking, and a voice-first interface designed for low-literacy users.</p>
+            <p class="text-inksoft mb-4">Integrated a GPT-powered chatbot into a production feature, connecting Firebase real-time data with MongoDB persistence, and built a responsive admin dashboard with REST API integrations for real-time monitoring.</p>
+            <div class="flex flex-wrap gap-2.5 mb-5">
+              <span class="chip text-xs px-2.5 py-1">React</span><span class="chip text-xs px-2.5 py-1">Node.js</span><span class="chip text-xs px-2.5 py-1">MongoDB</span>
+              <span class="chip text-xs px-2.5 py-1">Tailwind CSS</span><span class="chip text-xs px-2.5 py-1">OpenAI API</span><span class="chip text-xs px-2.5 py-1">Firebase</span>
+            </div>
+            <div class="flex gap-5">
+              <a href="https://shastho-bondho.netlify.app/" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Live demo ↗</a>
+              <a href="https://github.com/jannatulbakia/CSE_FEST_FALL" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Source ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- DonateBlood -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center py-14 border-b border-line reveal">
+          <div class="md:order-2 rounded-lg overflow-hidden border border-line bg-card shadow-[0_10px_30px_rgba(27,33,29,0.06)]">
+            <div class="flex items-center gap-1.5 px-3 py-2.5 bg-paperwarm border-b border-line">
+              <span class="w-2.5 h-2.5 rounded-full bg-clay inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-gold inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-forest inline-block"></span>
+              <span class="ml-2.5 font-mono text-xs text-inkfaint">donateblood.onrender.com</span>
+            </div>
+            <img src="Image/donate-blood.png" alt="DonateBlood platform screenshot" class="w-full h-auto">
+          </div>
+          <div class="md:order-1">
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint mb-2.5">Solo Developer · Blood Donation Platform</div>
+            <h3 class="font-serif font-medium text-2xl mb-3.5">DonateBlood</h3>
+            <p class="text-inksoft mb-4">Independently designed and built a complete backend with a RESTful API layer serving a React.js frontend, for a nationwide platform in Bangladesh, using Copilot and Cursor to accelerate development.</p>
+            <p class="text-inksoft mb-4">Implemented JWT-based authentication and role-based dashboards for admin, donor, and volunteer roles, real-time donor search with geolocation filtering, and Stripe payment integration. Owned the project fully, from schema design to deployment.</p>
+            <div class="flex flex-wrap gap-2.5 mb-5">
+              <span class="chip text-xs px-2.5 py-1">Node.js</span><span class="chip text-xs px-2.5 py-1">Express.js</span><span class="chip text-xs px-2.5 py-1">MongoDB</span>
+              <span class="chip text-xs px-2.5 py-1">JWT</span><span class="chip text-xs px-2.5 py-1">React.js</span><span class="chip text-xs px-2.5 py-1">Stripe API</span>
+            </div>
+            <div class="flex gap-5">
+              <a href="https://donateblood.onrender.com/" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Live demo ↗</a>
+              <a href="https://github.com/jannatulbakia/DonateBlood" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Source ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Export Import Hub -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center py-14 border-b border-line reveal">
+          <div class="rounded-lg overflow-hidden border border-line bg-card shadow-[0_10px_30px_rgba(27,33,29,0.06)]">
+            <div class="flex items-center gap-1.5 px-3 py-2.5 bg-paperwarm border-b border-line">
+              <span class="w-2.5 h-2.5 rounded-full bg-clay inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-gold inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-forest inline-block"></span>
+              <span class="ml-2.5 font-mono text-xs text-inkfaint">product-export-import.netlify.app</span>
+            </div>
+            <img src="Image/export.png" alt="Export Import Hub screenshot" class="w-full h-auto">
+          </div>
+          <div>
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint mb-2.5">Solo Project · Global Marketplace</div>
+            <h3 class="font-serif font-medium text-2xl mb-3.5">Export Import Hub</h3>
+            <p class="text-inksoft mb-4">A marketplace for browsing products, managing export listings, and importing items with one-click functionality built with Firebase authentication, real-time database sync, and a fully responsive dark-mode interface.</p>
+            <div class="flex flex-wrap gap-2.5 mb-5">
+              <span class="chip text-xs px-2.5 py-1">React</span><span class="chip text-xs px-2.5 py-1">Vite</span><span class="chip text-xs px-2.5 py-1">Firebase</span>
+              <span class="chip text-xs px-2.5 py-1">MongoDB</span><span class="chip text-xs px-2.5 py-1">Tailwind CSS</span><span class="chip text-xs px-2.5 py-1">Node.js</span>
+            </div>
+            <div class="flex gap-5">
+              <a href="https://product-export-import.netlify.app/" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Live demo ↗</a>
+              <a href="https://github.com/jannatulbakia/export-import-client" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Source ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secure Exam -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center py-14 reveal">
+          <div class="md:order-2 rounded-lg overflow-hidden border border-line bg-card shadow-[0_10px_30px_rgba(27,33,29,0.06)]">
+            <div class="flex items-center gap-1.5 px-3 py-2.5 bg-paperwarm border-b border-line">
+              <span class="w-2.5 h-2.5 rounded-full bg-clay inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-gold inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-forest inline-block"></span>
+              <span class="ml-2.5 font-mono text-xs text-inkfaint">online-secure-exam.vercel.app</span>
+            </div>
+            <img src="Image/secure.png" alt="Secure Exam platform screenshot" class="w-full h-auto">
+          </div>
+          <div class="md:order-1">
+            <div class="font-mono text-xs tracking-wider uppercase text-inkfaint mb-2.5">Group Project · Online Examination Platform</div>
+            <h3 class="font-serif font-medium text-2xl mb-3.5">Secure Exam</h3>
+            <p class="text-inksoft mb-4">Built a role-based backend for student and instructor roles on Next.js/Node.js, collaborating closely with teammates via Git and shared code review.</p>
+            <p class="text-inksoft mb-4">Implemented timed workflows with automated submission triggers and real-time activity logging, plus instructor management tools and an exam notification system, owning the feature from design through delivery.</p>
+            <div class="flex flex-wrap gap-2.5 mb-5">
+              <span class="chip text-xs px-2.5 py-1">Next.js</span><span class="chip text-xs px-2.5 py-1">Node.js</span><span class="chip text-xs px-2.5 py-1">MongoDB</span><span class="chip text-xs px-2.5 py-1">REST APIs</span>
+            </div>
+            <div class="flex gap-5">
+              <a href="https://online-secure-exam.vercel.app/" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Live demo ↗</a>
+              <a href="https://github.com/abir-11/online-secure-exam" target="_blank" rel="noopener" class="text-sm font-semibold border-b border-gold pb-0.5 no-underline hover:text-gold">Source ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="pt-24 pb-1" id="experience">
+      <div class="wrap reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section-title">Where I've worked</h2>
+        <div class="border-l-2 border-gold pl-7 py-1">
+          <div class="font-mono text-sm text-inkfaint tracking-wide">2026</div>
+          <div class="font-serif text-2xl font-medium mt-1.5 mb-0.5">Full-Stack Developer Intern</div>
+          <div class="font-serif italic text-forest mb-5">SRIYOG Consulting</div>
+          <ul class="list-disc pl-5 text-inksoft space-y-2.5">
+            <li>Built full-stack web applications from scratch with Node.js/Express.js and MongoDB, using AI coding assistants daily while working from the terminal and VS Code inside a professional consulting team.</li>
+            <li>Designed and integrated RESTful APIs connecting frontend and backend services, owning the integration layer end-to-end.</li>
+            <li>Built responsive React.js frontends, translating Figma designs into functional, cross-browser-compatible interfaces from design through production deployment.</li>
+            <li>Used Git/GitHub for version control and code review, and picked up new AI-assisted tools and workflows as project needs changed.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="pt-24 pb-0" id="education">
+      <div class="wrap reveal">
+        <p class="eyebrow">Education</p>
+        <h2 class="section-title">Academic background</h2>
+
+        <div class="mb-9">
+          <div class="font-serif font-medium text-xl mb-1.5">BAIUST</div>
+          <div class="text-inksoft mb-4 max-w-[60ch]">B.Sc. in Computer Science &amp; Engineering — Bangladesh Army International University of Science and Technology</div>
+          <div class="flex gap-8">
+            <div><div class="font-mono text-[0.7rem] uppercase tracking-wider text-inkfaint">Years</div><div class="font-semibold mt-0.5">2022 – 2026</div></div>
+            <div><div class="font-mono text-[0.7rem] uppercase tracking-wider text-inkfaint">CGPA</div><div class="font-semibold mt-0.5">3.83 / 4.00</div></div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- RESUME -->
+    <section class="pt-24 pb-1" id="resume">
+      <div class="wrap reveal">
+        <p class="eyebrow">Resume</p>
+        <h2 class="section-title">Full details, on paper.</h2>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border border-line rounded-lg px-8 py-8 bg-card">
+          <div>
+            <div class="font-serif font-medium text-xl mb-1.5">Jannatul Bakia — Resume</div>
+            <p class="text-inksoft max-w-[46ch]">A complete summary of my experience, skills, and education in one document.</p>
+          </div>
+          <a class="btn-primary shrink-0" href="resume.pdf" download="jannatul-bakia-resume.pdf">Download PDF ↓</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT -->
+  <section class="bg-deep text-[#EDECE6] mt-16 py-20" id="contact">
+    <div class="wrap reveal">
+      <p class="eyebrow !text-[#C9A75F]">Contact</p>
+      <h2 class="font-serif font-medium text-[clamp(2.1rem,4.4vw,3.1rem)] max-w-[14ch] leading-tight mb-6">Let's build something excellent together.</h2>
+      <p class="text-[#B7BBB1] max-w-[52ch] text-lg mb-10">Reach out to talk about a role, a project, or anything React, Node.js, and thoughtfully built products.</p>
+      <div class="flex flex-wrap gap-3.5">
+        <a class="cfield" href="mailto:jannatulbakia026@gmail.com"><span class="k">Email</span><span class="v">jannatulbakia026@gmail.com</span></a>
+        <a class="cfield" href="tel:+8801643056022"><span class="k">Phone</span><span class="v">+880 1643 056022</span></a>
+        <a class="cfield" href="https://www.linkedin.com/in/jannatul-bakia-456753353/" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">Connect professionally ↗</span></a>
+        <a class="cfield" href="https://github.com/jannatulbakia" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">View my code ↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-8 font-mono text-xs text-[#6E7369] bg-deep">
+    <p>© <span id="year"></span> Jannatul Bakia. Built with care.</p>
+  </footer>
+
+  <button id="scrollTop" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-ink text-paper flex items-center justify-center opacity-0 translate-y-3 transition-all z-40 hover:bg-gold" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
